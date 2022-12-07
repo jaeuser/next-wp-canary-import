@@ -43,7 +43,7 @@ if (process.env.PANTHEON_ENVIRONMENT_URL) {
 		process.env.IS_LIVE_ENVIRONMENT = true;
 	}
 }
-
+console.log('is live? ', process.env.IS_LIVE_ENVIRONMENT)
 const injectedOptions = {};
 if (process.env.PANTHEON_UPLOAD_PATH) {
 	injectedOptions['basePath'] = process.env.PANTHEON_UPLOAD_PATH;
